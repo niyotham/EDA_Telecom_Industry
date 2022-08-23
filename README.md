@@ -1,2 +1,2 @@
-# EDA_Telecom_Industry
-Telecommunication Industry exploratory ana,ysis
+# EDA Telecom Industry
+Telecommunication Industry exploratory analysis
