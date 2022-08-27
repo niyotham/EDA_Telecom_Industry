@@ -12,7 +12,7 @@ Your client wants you to provide a report to analyse opportunities for growth an
 is worth buying or selling. You will do this by analysing a telecommunication dataset that contains useful information 
 about the customers & their activities on the network. You will deliver insights you managed to extract to your employer through an easy to use web based dashboard and a written report.
 
-#Objectives
+# Objectives
 The main objective of this project are:
 Telecommunication Industry exploratory analysis split as follows:
 
