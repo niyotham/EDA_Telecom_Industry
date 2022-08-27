@@ -139,5 +139,39 @@ def percent_missing(df):
     # Calculate percentage of missing values
     print("The  dataset contains", round(((totalMissing/totalCells) * 100), 2), "%", "missing values.")
 
-
-pd.options.display.float_format = format_float
+def fill_na(type: str, df: pd.DataFrame, 
+                cols: list) -> pd.DataFrame:
+        """
+        A function to fill nulls and undefined data types
+        Parameters
+        =--------=
+        type: string
+            The type of the fill. Eg: mode, mean, median
+        df: pd.dataframe
+            The data frame to fill
+        cols: list
+            The list of columns to be filled
+        Returns
+        =-----=
+        self.df: pandas dataframe
+            The modified dataframe
+        """
+        if (type == 'mean'):
+            for col in cols:
+                df.col.fillna(value=df.col.mean(), axis=1,
+                                   inplace=True)
+            return df
+        elif (type == 'median'):
+            for col in cols:
+                df.col.fillna(value=df.col.median(), axis=1,
+                                   inplace=True)
+            return df
+        elif (type == 'mode'):
+            for col in cols:
+                df.col.fillna(value=df.col.mode(), axis=1,
+                                   inplace=True)
+            return df
+        else:
+            print('type must be either mean, median or mode')
+# pd.options.display.float_format = format_float
+# 
